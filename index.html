@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product Discount Calculator</title>
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Product Discount Calculator</h1>
+			<p>Enter the product details to calculate the discounted price.</p>
+
+			<div class="form-group">
+				<label for="originalPrice">Original Price ($):</label>
+				<input
+					type="number"
+					id="originalPrice"
+					placeholder="Enter original price"
+				/>
+			</div>
+
+			<div class="form-group">
+				<label for="discountPercentage">Discount Percentage (%):</label>
+				<input
+					type="number"
+					id="discountPercentage"
+					placeholder="Enter discount percentage"
+				/>
+			</div>
+
+			<button id="calculateBtn">Calculate Discount</button>
+
+			<div class="result" style="display: none;">
+				<h2>Result</h2>
+				<p>Discounted Price: <span id="discountedPrice">$0.00</span></p>
+				<p>Amount Saved: <span id="amountSaved">$0.00</span></p>
+			</div>
+		</div>
+
+        <!-- Script JS -->
+		<script src="./script.js"></script>
+	</body>
+</html>
